@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Inter Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Mangled class prefix p9x1- for SEO and style integrity */
+  .p9x1-hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .p9x1-hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .p9x1-glow-amber {
+    box-shadow: 0 4px 20px -2px rgba(255, 176, 58, 0.45);
+  }
+  
+  .p9x1-glow-amber:hover {
+    box-shadow: 0 6px 28px 0 rgba(255, 176, 58, 0.65);
+  }
+
+  .p9x1-glass {
+    background: rgba(18, 18, 22, 0.85);
+    backdrop-filter: blur(8px);
+  }
+
+  .p9x1-border-glow {
+    border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .p9x1-border-glow:hover {
+    border-color: rgba(255, 176, 58, 0.35);
+  }
+}
