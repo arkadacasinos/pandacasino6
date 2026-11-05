@@ -6,6 +6,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ru" className="dark bg-[#0a0a0c]">
       <head>
+        <meta name="yandex-verification" content="85be7158afa73047" />
         <title>Panda Casino официальный сайт | Панда Казино рабочее зеркало играть онлайн</title>
         <meta
           name="description"
